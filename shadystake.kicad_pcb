@@ -2188,8 +2188,8 @@
   (via (at 97.79 124.46) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp a2f09075-d31f-4f98-b54d-39a7c4386252))
   (via (at 97.79 104.14) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp ae990ba6-cd03-46ad-9228-0d2261fcc63e))
   (via (at 97.79 114.3) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp bcc29d12-763a-4a30-9f43-0f7ac257bb12))
-  (via (at 76.708 114.554) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp c3369cca-2d75-4ea2-bc38-27ca86cb8c57))
-  (via (at 78.232 114.554) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp d52fa775-2c2b-46a8-ac38-7a902ea6ae35))
+  (via (at 75.946 115.062) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp c3369cca-2d75-4ea2-bc38-27ca86cb8c57))
+  (via (at 77.724 115.062) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp d52fa775-2c2b-46a8-ac38-7a902ea6ae35))
   (via (at 97.79 121.92) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 29) (tstamp f068ef1e-3597-48e8-b208-17eade47c74b))
 
   (zone (net 29) (net_name "Earth_Protective") (layers F&B.Cu) (tstamp 221ef468-d490-478b-8d0c-b3b6cfd2d18b) (hatch edge 0.508)
