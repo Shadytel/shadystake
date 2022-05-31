@@ -1,11 +1,11 @@
 (footprint "Digit" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 0)
-  (fp_text reference "REF**" (at 6.0325 -1.0668 unlocked) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 6.0325 -1.0668 unlocked) (layer "F.SilkS") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 83269897-6204-4f98-8dcb-fbf7b61e49de)
   )
-  (fp_text value "Digit" (at 6.2357 0.5461 unlocked) (layer "F.Fab")
+  (fp_text value "Digit" (at 6.2357 0.5461 unlocked) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 2672f9f5-6a80-4790-96b9-f97d8c09da85)
   )
