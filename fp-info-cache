@@ -1,4 +1,4 @@
-19805783645896624
+19814064729955516
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -77973,8 +77973,43 @@ Sparkgap_JLC
 4
 2
 Shadystake
+TP
+
+
+0
+1
+1
+Shadystake
 fap
 Converted using: svg2mod -i fap2.svg -o /mnt/c/Users/supersat/Documents/Projects/shadytel/shadystake/Shadystake.pretty/fap.kicad_mod
+svg2mod
+0
+0
+0
+Shadystake
+ground
+Converted using: svg2mod -i /mnt/c/Users/supersat/Downloads/IEC_60417-5019.svg -o /mnt/c/Users/supersat/Documents/Projects/shadytel/shadystake/Shadystake.pretty/ground.kicad_mod --force F.Mask
+svg2mod
+0
+0
+0
+Shadystake
+shadytel
+Converted using: svg2mod -i 'shadytel new black 53mm.svg' -o /mnt/c/Users/supersat/Documents/Projects/shadytel/shadystake/Shadystake.pretty/shadytel.kicad_mod --force F.Mask
+svg2mod
+0
+0
+0
+Shadystake
+shadytel_labs
+Converted using: svg2mod -i /mnt/c/Users/supersat/Documents/shadytel_logo_for_shadystake.svg -o /mnt/c/Users/supersat/Documents/Projects/shadytel/shadystake/Shadystake.pretty/shadytel_labs.kicad_mod
+svg2mod
+0
+0
+0
+Shadystake
+shock_warning
+Converted using: svg2mod -i /mnt/c/Users/supersat/Downloads/Electric-lighting.svg -o /mnt/c/Users/supersat/Documents/Projects/shadytel/shadystake/Shadystake.pretty/shock_warning.kicad_mod --force F.Mask
 svg2mod
 0
 0

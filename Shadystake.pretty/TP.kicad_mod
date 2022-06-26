@@ -1,0 +1,18 @@
+(footprint "TP" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 62B7E58B)
+  (attr smd)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 8a3edc6b-1900-4f2c-8ac0-275bb3c276eb)
+  )
+  (fp_text value "TP" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 9bfa7efc-fc1f-4287-9c2f-f14b040002bc)
+  )
+  (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 2fffe151-1e8a-4e47-b673-6a8ca3555650)
+  )
+  (pad "1" smd oval (at 0 0) (size 6 4) (layers "F.Cu" "F.Mask") (tstamp c975cd87-3ac5-4baf-ac6e-59b014a63397))
+)
