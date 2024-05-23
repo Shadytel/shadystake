@@ -6192,24 +6192,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp 13edf85d-e5b3-408c-9ca0-37b4fd7394a6)
-    (at 124.6886 63.8302 -20)
+    (at 124.951757 63.959097 -23)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/e21fac56-b274-477f-b454-6d91d51c7236")
     (attr smd)
-    (fp_text reference "TP5" (at 0 0.5 160 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP5" (at 0 0.5 157 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 5ed37a58-8f40-4f13-a79e-f8f2911c209b)
     )
-    (fp_text value "TestPoint" (at 0 -1 160 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 157 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 1802bbdf-9ea8-42cf-91d0-c8cda613e428)
     )
-    (fp_text user "${REFERENCE}" (at 0 -2.5 160 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0 -2.5 157 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 5f1f2258-f567-4915-a3c9-c4dff3d71395)
     )
-    (pad "1" smd custom (at -1.5 0 340) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 337) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 17 "/TIP3") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -6303,24 +6303,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp 3d4f23ae-2f98-4eaf-9578-1c219a371340)
-    (at 50.673 72.4408 -150)
+    (at 50.770962 72.378 -151)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/0a098971-8170-4313-af7d-cc4b35a48563")
     (attr smd)
-    (fp_text reference "TP1" (at 0 0.5 30 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP1" (at 0 0.5 29 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp b3a145e1-b265-4d2a-bb5c-20d2c11dff6a)
     )
-    (fp_text value "TestPoint" (at 0 -1 30 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 29 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp cf582e10-2c7f-4918-ad5b-d857c192df7d)
     )
-    (fp_text user "${REFERENCE}" (at -0.000001 -2.5 30 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at -0.000001 -2.5 29 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp f18ae234-5db0-4fda-9628-d5c0d7ca1db1)
     )
-    (pad "1" smd custom (at -1.5 0 210) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 209) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 4 "/TIP1") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -6383,24 +6383,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp 534caec7-cf60-4f90-b1ed-42c9d445ef0f)
-    (at 126.7968 58.4962 -20)
+    (at 127.120776 58.60091 -22)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/16866a64-c8d3-4fa6-87e7-e15e690191a6")
     (attr smd)
-    (fp_text reference "TP6" (at 0 0.5 160 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP6" (at 0 0.5 158 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 5ed8462c-9f6d-44e0-a840-fb877116b839)
     )
-    (fp_text value "TestPoint" (at 0 -1 160 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 158 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp b6868c16-9082-47a9-8629-103178609078)
     )
-    (fp_text user "${REFERENCE}" (at 0 -2.5 160 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0 -2.5 158 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 0a49fe4c-8107-42f8-98a9-4600d5178767)
     )
-    (pad "1" smd custom (at -1.5 0 340) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 338) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 16 "/RING3") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -6597,24 +6597,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp 80083ea7-fb5b-4913-9634-2fb0af44c59d)
-    (at 53.7464 77.343 -150)
+    (at 53.754684 77.287324 -145)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/852d7eb3-be75-4a91-a77c-983a0b48cb78")
     (attr smd)
-    (fp_text reference "TP2" (at 0 0.5 30 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP2" (at 0 0.5 35 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 380b6aab-4061-4eba-a3f2-f153f41f3220)
     )
-    (fp_text value "TestPoint" (at 0 -1 30 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 35 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a8d3e5a2-490e-4069-9c0f-f16a3933d649)
     )
-    (fp_text user "${REFERENCE}" (at -0.000001 -2.5 30 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at -0.000001 -2.5 35 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 88dc0091-b617-4d2b-9fff-42f0c13d99d3)
     )
-    (pad "1" smd custom (at -1.5 0 210) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 215) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 3 "/RING1") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -7023,24 +7023,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp 90cab02d-267e-45bb-aa34-dd6639e766c6)
-    (at 118.237 77.2922 -30)
+    (at 118.237 77.2922 -33)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/acce9e8d-1af5-4185-9b26-f4e12168abf6")
     (attr smd)
-    (fp_text reference "TP3" (at 0 0.5 150 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP3" (at 0 0.5 147 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 2d13d6e5-791e-4e23-8450-9371fc32c50e)
     )
-    (fp_text value "TestPoint" (at 0 -1 150 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 147 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 6cc1abb5-8fe6-44eb-b595-17dd876163b1)
     )
-    (fp_text user "${REFERENCE}" (at 0.000001 -2.5 150 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0.000001 -2.5 147 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 735bbe08-0d38-4646-b51a-6db4175611a5)
     )
-    (pad "1" smd custom (at -1.5 0 330) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 327) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 11 "/TIP2") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -7221,24 +7221,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp c2d69f85-ce98-4cb4-9091-93ade350b8b6)
-    (at 46.4566 63.4238 -160)
+    (at 46.4566 63.4238 -156)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/1d3ea86f-e865-473d-82a1-7f4a62523f60")
     (attr smd)
-    (fp_text reference "TP8" (at 0 0.5 20 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP8" (at 0 0.5 24 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp ce6db59e-aab6-4a92-b79a-4b99b9b27cc6)
     )
-    (fp_text value "TestPoint" (at 0 -1 20 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 24 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp b3bbc24c-62e1-4e7f-ba63-208f8e09b04c)
     )
-    (fp_text user "${REFERENCE}" (at 0 -2.5 20 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0 -2.5 24 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a9342839-5797-448c-bb20-842179ae159f)
     )
-    (pad "1" smd custom (at -1.5 0 200) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 204) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 22 "/RING4") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -7332,24 +7332,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp df6662bc-67e6-4598-9ab4-ee6c45c3b448)
-    (at 120.9548 72.2376 -30)
+    (at 121.09751 72.2376 -27)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/3a9d0b00-96d7-4fd0-bdc5-d104420acca5")
     (attr smd)
-    (fp_text reference "TP4" (at 0 0.5 150 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP4" (at 0 0.5 153 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp deb25008-2969-4959-9a6f-75c46a7905b2)
     )
-    (fp_text value "TestPoint" (at 0 -1 150 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 153 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp e852a1b4-9547-48eb-8abe-77f446f39921)
     )
-    (fp_text user "${REFERENCE}" (at 0.000001 -2.5 150 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0.000001 -2.5 153 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp e7c191ac-f618-49a3-b92a-fb6b7ad3a7f2)
     )
-    (pad "1" smd custom (at -1.5 0 330) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 333) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 10 "/RING2") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -7412,24 +7412,24 @@
 
   (footprint "Shadystake:TP" (layer "B.Cu")
     (tedit 62B7E58B) (tstamp e935a8b6-55dc-4b48-a812-4231bd362648)
-    (at 44.0436 58.0136 -160)
+    (at 44.0436 58.0136 -158)
     (property "Sheetfile" "shadystake.kicad_sch")
     (property "Sheetname" "")
     (path "/3190d7e0-a61f-4ca4-b327-9b533cabbe43")
     (attr smd)
-    (fp_text reference "TP7" (at 0 0.5 20 unlocked) (layer "B.SilkS") hide
+    (fp_text reference "TP7" (at 0 0.5 22 unlocked) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp f52d11fd-db82-489b-bde4-2200b52d9d4b)
     )
-    (fp_text value "TestPoint" (at 0 -1 20 unlocked) (layer "B.Fab") hide
+    (fp_text value "TestPoint" (at 0 -1 22 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 5de4cb01-ec1a-4f57-b637-af607db03628)
     )
-    (fp_text user "${REFERENCE}" (at 0 -2.5 20 unlocked) (layer "B.Fab") hide
+    (fp_text user "${REFERENCE}" (at 0 -2.5 22 unlocked) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 65016cbf-5ee6-4b7f-b990-9b7cf3b25211)
     )
-    (pad "1" smd custom (at -1.5 0 200) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
+    (pad "1" smd custom (at -1.5 0 202) (size 1.524 1.524) (layers "B.Cu" "B.Mask")
       (net 23 "/TIP4") (pinfunction "1") (pintype "passive")
       (options (clearance outline) (anchor circle))
       (primitives
@@ -7654,7 +7654,6 @@
   (segment (start 67.95 56.62) (end 67.95 55.504) (width 0.1524) (layer "B.Cu") (net 3) (tstamp 5402af6e-ee31-4868-9e22-60ad7a074b46))
   (segment (start 60.198 57.15) (end 60.198 72.39) (width 0.1524) (layer "B.Cu") (net 3) (tstamp 77c8b55d-eb6a-4413-8bcf-1a53c31ad1c1))
   (segment (start 67.818 70.866) (end 67.818 65.532) (width 0.4572) (layer "B.Cu") (net 3) (tstamp 8945af90-69b5-43d8-8bea-a478fdf7f683))
-  (segment (start 55.245 77.343) (end 53.7464 77.343) (width 0.1524) (layer "B.Cu") (net 3) (tstamp 90680382-5e9f-4a06-8149-70f3ef8cab2a))
   (segment (start 67.818 65.532) (end 67.818 56.752) (width 0.1524) (layer "B.Cu") (net 3) (tstamp a50b4eec-f39d-450a-b846-0e7a3842b371))
   (segment (start 67.95 55.504) (end 67.564 55.118) (width 0.1524) (layer "B.Cu") (net 3) (tstamp d0dfb2e8-5182-45b1-a985-bd24b18b54b0))
   (segment (start 60.198 72.39) (end 55.245 77.343) (width 0.1524) (layer "B.Cu") (net 3) (tstamp f6a6eaf2-5dc2-4233-9da0-708a0d7ecda3))
@@ -7672,7 +7671,6 @@
   (segment (start 68.326 54.61) (end 61.722 54.61) (width 0.1524) (layer "B.Cu") (net 4) (tstamp 2f84ee92-748e-4678-a4c1-921a95155c53))
   (segment (start 69.342 70.612) (end 69.85 71.12) (width 0.4572) (layer "B.Cu") (net 4) (tstamp 3ff04768-3942-496c-ac1d-a6ca9c0a021d))
   (segment (start 69.342 65.532) (end 69.342 58.882) (width 0.1524) (layer "B.Cu") (net 4) (tstamp 554057a4-bd96-4eed-bb69-a9078566b895))
-  (segment (start 52.2732 72.4408) (end 50.673 72.4408) (width 0.1524) (layer "B.Cu") (net 4) (tstamp 5e200e30-64bf-419d-ae64-0a1f377c522d))
   (segment (start 84.328 71.12) (end 85.725 69.723) (width 0.4572) (layer "B.Cu") (net 4) (tstamp 75770e4e-1beb-4568-b1ea-3bccb09465fd))
   (segment (start 69.22 55.504) (end 68.326 54.61) (width 0.1524) (layer "B.Cu") (net 4) (tstamp 775fedc4-8eef-4d01-9b16-e16c4421f9a5))
   (segment (start 69.342 58.882) (end 69.22 58.76) (width 0.1524) (layer "B.Cu") (net 4) (tstamp 841f5031-e325-42c1-b00e-24b2e7ad2bbc))
@@ -7699,7 +7697,6 @@
   (segment (start 112.014 54.102) (end 112.268 54.356) (width 0.1524) (layer "B.Cu") (net 10) (tstamp 963a308d-fe28-4bff-a6c4-8cfee26c6f98))
   (segment (start 112.268 54.356) (end 112.268 65.532) (width 0.1524) (layer "B.Cu") (net 10) (tstamp baeca6d9-42b3-4acb-ba8d-df8ba51e9241))
   (segment (start 103.378 68.326) (end 103.124 68.58) (width 0.4572) (layer "B.Cu") (net 10) (tstamp cb8fe08f-943f-4602-8005-abfaa0e36334))
-  (segment (start 118.9736 72.2376) (end 120.9548 72.2376) (width 0.1524) (layer "B.Cu") (net 10) (tstamp da7991d0-a8fc-4586-afc5-cc817203f910))
   (segment (start 103.51 54.732) (end 104.14 54.102) (width 0.1524) (layer "B.Cu") (net 10) (tstamp e110bb11-39c9-4f1f-a97c-16eda6f0ee10))
   (segment (start 94.668 66.22) (end 89.535 66.22) (width 0.4572) (layer "B.Cu") (net 10) (tstamp ebc0002d-394b-4fe5-ac39-6fcffdecf343))
   (segment (start 103.51 56.62) (end 103.51 54.732) (width 0.1524) (layer "B.Cu") (net 10) (tstamp f31ad303-e5e5-4bd1-869a-fc73eefd88c0))
@@ -7742,7 +7739,6 @@
   (segment (start 84.455 72.009) (end 83.947 72.517) (width 0.4572) (layer "F.Cu") (net 16) (tstamp ebfae705-98bc-48e8-949b-e23067f99f06))
   (segment (start 103.251 46.228) (end 104.77 47.747) (width 0.1524) (layer "F.Cu") (net 16) (tstamp fd4fd7a0-5893-4686-8fc7-24cc8298ee19))
   (segment (start 94.996 39.37) (end 96.774 37.592) (width 0.4572) (layer "B.Cu") (net 16) (tstamp 083764cd-6666-414f-8a41-830b45ae7df3))
-  (segment (start 124.5362 58.4962) (end 126.7968 58.4962) (width 0.1524) (layer "B.Cu") (net 16) (tstamp 084064fa-5c53-4f32-a91d-27b324fb57ee))
   (segment (start 102.87 37.592) (end 104.902 39.624) (width 0.4572) (layer "B.Cu") (net 16) (tstamp 1863e710-95a3-4879-a6e2-bdbfae819493))
   (segment (start 104.902 51.198) (end 104.77 51.33) (width 0.1524) (layer "B.Cu") (net 16) (tstamp 3ecc4ce7-5016-4f64-89b7-5491fd51a8fe))
   (segment (start 94.234 62.103) (end 94.996 61.341) (width 0.4572) (layer "B.Cu") (net 16) (tstamp 51577526-750b-4818-98c7-3e3f8632f8eb))
@@ -7771,16 +7767,17 @@
   (segment (start 89.408 63.119) (end 95.25 63.119) (width 0.4572) (layer "B.Cu") (net 17) (tstamp 2820ad95-d8aa-436f-a3c0-71d0e3c6e0f7))
   (segment (start 97.282 38.862) (end 102.235 38.862) (width 0.4572) (layer "B.Cu") (net 17) (tstamp 3e21998d-12c0-4a3a-b9af-75708e29b25c))
   (segment (start 103.378 44.958) (end 103.378 49.068) (width 0.1524) (layer "B.Cu") (net 17) (tstamp 46b6d54c-89f9-4b52-919f-3d84cf2dd09d))
-  (segment (start 114.1984 53.34) (end 124.6886 63.8302) (width 0.1524) (layer "B.Cu") (net 17) (tstamp 636669b3-24a8-47d2-b0d6-d6f0e7fd7d1f))
   (segment (start 104.14 53.34) (end 114.1984 53.34) (width 0.1524) (layer "B.Cu") (net 17) (tstamp 7e109cca-04bc-495c-b10e-3ebc6ca56d1f))
   (segment (start 103.378 49.068) (end 103.5 49.19) (width 0.1524) (layer "B.Cu") (net 17) (tstamp 9224f253-1b0a-45ae-acf2-f135590f7c3e))
   (segment (start 96.139 40.005) (end 97.282 38.862) (width 0.4572) (layer "B.Cu") (net 17) (tstamp 9397719b-4a3b-4984-a470-967198532930))
   (segment (start 102.235 38.862) (end 103.378 40.005) (width 0.4572) (layer "B.Cu") (net 17) (tstamp a3f25cbf-6892-4ff8-b16d-4a42aebbfbcc))
   (segment (start 95.25 63.119) (end 96.139 62.23) (width 0.4572) (layer "B.Cu") (net 17) (tstamp a8b3b4e3-38e0-428e-8b48-1af3a2f1c049))
   (segment (start 96.139 62.23) (end 96.139 40.005) (width 0.4572) (layer "B.Cu") (net 17) (tstamp aa1f1e6e-d57a-4f2e-907c-71c206849a98))
+  (segment (start 123.571 62.7126) (end 123.571 63.373) (width 0.1524) (layer "B.Cu") (net 17) (tstamp ddc01212-9259-4209-81c9-0502cca29c43))
   (segment (start 103.5 52.7) (end 104.14 53.34) (width 0.1524) (layer "B.Cu") (net 17) (tstamp e1bb8d52-b70a-445a-b348-dd2bf5b61e1e))
   (segment (start 103.5 49.19) (end 103.5 52.7) (width 0.1524) (layer "B.Cu") (net 17) (tstamp e8b1664c-b09f-40ab-80e2-d4944a7a0e76))
   (segment (start 103.378 40.005) (end 103.378 44.958) (width 0.4572) (layer "B.Cu") (net 17) (tstamp f9c36797-ad6b-4d13-9bd2-72cca321e4d7))
+  (segment (start 114.1984 53.34) (end 123.571 62.7126) (width 0.1524) (layer "B.Cu") (net 17) (tstamp fe89c65c-2d9f-4263-9088-3d552c9d7703))
   (segment (start 78.994 81.28) (end 78.994 78.486) (width 0.4572) (layer "F.Cu") (net 22) (tstamp 1e320ab8-3789-42ac-bf90-b8231bc4130e))
   (segment (start 83.375198 39.9) (end 80.051198 36.576) (width 0.1524) (layer "F.Cu") (net 22) (tstamp 4522db53-6537-47ac-b7f2-e2ba604582fa))
   (segment (start 84.45 39.9) (end 83.375198 39.9) (width 0.1524) (layer "F.Cu") (net 22) (tstamp 80308c75-cbda-4439-866e-6d8642507efb))
@@ -7797,7 +7794,6 @@
   (segment (start 76.581 60.88601) (end 76.581 40.767) (width 0.4572) (layer "B.Cu") (net 22) (tstamp 5021e951-db9e-4c81-9dd8-7eff865b4f00))
   (segment (start 69.342 40.386) (end 69.342 45.212) (width 0.4572) (layer "B.Cu") (net 22) (tstamp 51191c30-5e57-4412-a8dd-fb5a172d5dd1))
   (segment (start 69.342 51.198) (end 69.21 51.33) (width 0.1524) (layer "B.Cu") (net 22) (tstamp 7146f340-7015-47ca-93a4-65ba869d74b5))
-  (segment (start 46.4566 62.7634) (end 46.4566 63.4238) (width 0.1524) (layer "B.Cu") (net 22) (tstamp 832faf4d-3bbe-48b0-b081-92cefd3c4e42))
   (segment (start 81.915 66.22001) (end 76.581 60.88601) (width 0.4572) (layer "B.Cu") (net 22) (tstamp b197205f-ffd0-4067-9385-e1bc29de5f9b))
   (segment (start 76.581 40.767) (end 75.184 39.37) (width 0.4572) (layer "B.Cu") (net 22) (tstamp bf7fa64d-36fe-40a2-8406-38062ad493e3))
   (segment (start 69.21 52.456) (end 68.072 53.594) (width 0.1524) (layer "B.Cu") (net 22) (tstamp d20dd684-615e-468e-bdac-1ab32e47e674))
@@ -7812,7 +7808,7 @@
   (segment (start 88.26 37.76) (end 88.26 36.317) (width 0.1524) (layer "F.Cu") (net 23) (tstamp a4a745b3-41ab-4a2c-9a05-ee7919ebaf1b))
   (segment (start 88.26 36.317) (end 87.757 35.814) (width 0.1524) (layer "F.Cu") (net 23) (tstamp c1dc9634-5422-4322-8b53-e8b657d687b3))
   (segment (start 83.185 75.311) (end 83.185 68.360011) (width 0.4572) (layer "F.Cu") (net 23) (tstamp e134278e-e9e3-41d3-ba27-fa5bceaea42a))
-  (segment (start 50.4444 58.0136) (end 44.0436 58.0136) (width 0.1524) (layer "B.Cu") (net 23) (tstamp 299eede3-00ba-4a48-abba-3d80c336d21a))
+  (segment (start 45.996286 58.0136) (end 45.434376 57.45169) (width 0.1524) (layer "B.Cu") (net 23) (tstamp 2abd522b-27e8-42f0-be73-eca742bffcf4))
   (segment (start 83.185 65.859812) (end 77.724 60.398812) (width 0.4572) (layer "B.Cu") (net 23) (tstamp 3b222451-1615-4f41-b853-a6ac17a16448))
   (segment (start 75.438 37.846) (end 69.85 37.846) (width 0.4572) (layer "B.Cu") (net 23) (tstamp 4254e081-2927-4fbd-b7cd-b97b31c24c32))
   (segment (start 67.818 49.068) (end 67.94 49.19) (width 0.1524) (layer "B.Cu") (net 23) (tstamp 48dd7e7b-aff2-4767-a83a-67812904db7e))
@@ -7823,6 +7819,7 @@
   (segment (start 55.372 53.086) (end 50.4444 58.0136) (width 0.1524) (layer "B.Cu") (net 23) (tstamp b2477d6b-d121-4799-b90a-4337cc4ef6d1))
   (segment (start 67.818 39.878) (end 67.818 45.212) (width 0.4572) (layer "B.Cu") (net 23) (tstamp b4956260-255c-47f3-bcf2-df9a9dded0c9))
   (segment (start 77.724 40.132) (end 75.438 37.846) (width 0.4572) (layer "B.Cu") (net 23) (tstamp c04914d0-2eb2-4c01-9f78-9a8de51cebd0))
+  (segment (start 50.4444 58.0136) (end 45.996286 58.0136) (width 0.1524) (layer "B.Cu") (net 23) (tstamp d3a2b186-87b1-4d37-a9e1-6e33866e371c))
   (segment (start 69.85 37.846) (end 67.818 39.878) (width 0.4572) (layer "B.Cu") (net 23) (tstamp ea55e2bb-b178-47b0-a81c-b86fdaaac45a))
   (segment (start 67.94 52.71) (end 67.564 53.086) (width 0.1524) (layer "B.Cu") (net 23) (tstamp ef1bdd51-8981-4b68-8b32-b988f9cecbef))
   (segment (start 67.818 45.212) (end 67.818 49.068) (width 0.1524) (layer "B.Cu") (net 23) (tstamp ff220244-faf9-4a8d-8c6b-518256ec397b))
