@@ -1,1532 +1,1856 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid 3085826e-0b13-4a8b-8c8d-a88fd04c6de4)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "TP" (id 0) (at 0 6.858 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "TestPoint" (id 1) (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 5.08 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 5.08 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "test point tp" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "test point" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TestPoint_0_1"
-        (circle (center 0 3.302) (radius 0.762)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "TestPoint_1_1"
-        (pin passive line (at 0 0 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:Earth_Protective" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 6.35 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "Earth_Protective" (id 1) (at 11.43 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (id 2) (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag ground gnd clean" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"Earth_Protective\"" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Earth_Protective_0_1"
-        (circle (center 0 -3.81) (radius 2.54)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 -4.445)
-            (xy 0.635 -4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.127 -5.08)
-            (xy 0.127 -5.08)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -3.81)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -3.81)
-            (xy -1.27 -3.81)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "Earth_Protective_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "Earth_Protective" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#FLG" (id 0) (at 0 1.905 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "PWR_FLAG" (id 1) (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Special symbol for telling ERC where power comes from" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PWR_FLAG_0_0"
-        (pin power_out line (at 0 0 90) (length 0)
-          (name "pwr" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "PWR_FLAG_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 1.27)
-            (xy -1.016 1.905)
-            (xy 0 2.54)
-            (xy 1.016 1.905)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "shadystake-rescue:6P6C-Connector" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (id 0) (at -5.08 11.43 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Value" "6P6C-Connector" (id 1) (at 2.54 11.43 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0.635 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0.635 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "6P6C* RJ12* RJ18* RJ25*" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "6P6C-Connector_0_1"
-        (polyline
-          (pts
-            (xy -6.35 -1.905)
-            (xy -5.08 -1.905)
-            (xy -5.08 -1.905)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 -0.635)
-            (xy -5.08 -0.635)
-            (xy -5.08 -0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 0.635)
-            (xy -5.08 0.635)
-            (xy -5.08 0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 1.905)
-            (xy -5.08 1.905)
-            (xy -5.08 1.905)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 3.175)
-            (xy -5.08 3.175)
-            (xy -5.08 3.175)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 4.445)
-            (xy -6.35 4.445)
-            (xy -6.35 4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 -4.445)
-            (xy -6.35 6.985)
-            (xy 3.81 6.985)
-            (xy 3.81 4.445)
-            (xy 5.08 4.445)
-            (xy 5.08 3.175)
-            (xy 6.35 3.175)
-            (xy 6.35 -0.635)
-            (xy 5.08 -0.635)
-            (xy 5.08 -1.905)
-            (xy 3.81 -1.905)
-            (xy 3.81 -4.445)
-            (xy -6.35 -4.445)
-            (xy -6.35 -4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (rectangle (start 7.62 10.16) (end -7.62 -7.62)
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-      )
-      (symbol "6P6C-Connector_1_1"
-        (pin passive line (at 10.16 -5.08 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 -2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 5.08 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 7.62 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "shadystake-rescue:8P8C-Connector" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (id 0) (at -5.08 13.97 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Value" "8P8C-Connector" (id 1) (at 2.54 13.97 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0.635 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0.635 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "8P8C-Connector_0_1"
-        (polyline
-          (pts
-            (xy -5.08 4.445)
-            (xy -6.35 4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 5.715)
-            (xy -6.35 5.715)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 -3.175)
-            (xy -5.08 -3.175)
-            (xy -5.08 -3.175)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 -1.905)
-            (xy -5.08 -1.905)
-            (xy -5.08 -1.905)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 -0.635)
-            (xy -5.08 -0.635)
-            (xy -5.08 -0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 0.635)
-            (xy -5.08 0.635)
-            (xy -5.08 0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 1.905)
-            (xy -5.08 1.905)
-            (xy -5.08 1.905)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 3.175)
-            (xy -6.35 3.175)
-            (xy -6.35 3.175)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -6.35 -4.445)
-            (xy -6.35 6.985)
-            (xy 3.81 6.985)
-            (xy 3.81 4.445)
-            (xy 5.08 4.445)
-            (xy 5.08 3.175)
-            (xy 6.35 3.175)
-            (xy 6.35 -0.635)
-            (xy 5.08 -0.635)
-            (xy 5.08 -1.905)
-            (xy 3.81 -1.905)
-            (xy 3.81 -4.445)
-            (xy -6.35 -4.445)
-            (xy -6.35 -4.445)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (rectangle (start 7.62 12.7) (end -7.62 -10.16)
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-      )
-      (symbol "8P8C-Connector_1_1"
-        (pin passive line (at 10.16 -7.62 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 -5.08 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 -2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 5.08 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 7.62 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 10.16 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "shadystake-rescue:SPARK_GAP-Device" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "E" (id 0) (at 0 2.032 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SPARK_GAP-Device" (id 1) (at 0 -1.905 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 -1.778 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SG*" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SPARK_GAP-Device_0_1"
-        (polyline
-          (pts
-            (xy -2.54 0.635)
-            (xy -2.54 -0.635)
-            (xy -0.635 0)
-            (xy -2.54 0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 0.635)
-            (xy 2.54 -0.635)
-            (xy 0.635 0)
-            (xy 2.54 0.635)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "SPARK_GAP-Device_1_1"
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 177.8 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid 27d81d6f-e912-40e5-99a8-87b9df2db0b8)
-  )
-  (junction (at 154.94 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid 354e124a-d677-4000-8f60-c16bbfd85f6c)
-  )
-  (junction (at 190.5 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid 3b7cbcfa-c61a-4ab9-bea3-24a7986a82f0)
-  )
-  (junction (at 177.8 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid 5825fda3-5caf-4b35-8d6e-46a1d0a8e626)
-  )
-  (junction (at 212.09 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid 6f18d128-5f3f-4c0a-876a-e80c809dbcbc)
-  )
-  (junction (at 146.05 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid 7a570091-3842-4c66-bbb2-7ce84df5b05a)
-  )
-  (junction (at 146.05 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid 82c84775-7d99-45f7-a1f2-c39760b576d4)
-  )
-  (junction (at 167.64 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid 866e51cd-9910-48ca-8d3e-5710c12edd47)
-  )
-  (junction (at 172.72 100.33) (diameter 0) (color 0 0 0 0)
-    (uuid 8d821593-472a-4548-8842-e2bf41e6e590)
-  )
-  (junction (at 199.39 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid 96a1fca1-d59f-4272-a77b-0994799a2bc6)
-  )
-  (junction (at 133.35 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid bad1ed33-6870-44d4-869b-24795feac9dd)
-  )
-  (junction (at 172.72 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid d09db827-9281-452a-9907-71875c86f5cc)
-  )
-  (junction (at 199.39 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid d4b3ec19-022d-4d7d-a9d8-67cb47b8a3bc)
-  )
-  (junction (at 154.94 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid f57c0805-f12e-4cc2-a41b-accd11b33757)
-  )
-  (junction (at 167.64 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid f93f9307-f407-4fee-89bf-22435b5d1c74)
-  )
-  (junction (at 190.5 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid ff59703f-c441-41a3-af66-c5e4cfa6abce)
-  )
-
-  (no_connect (at 102.87 114.3) (uuid 535d117d-488c-4a0f-968f-2994a9a0ffbf))
-  (no_connect (at 102.87 127) (uuid 535d117d-488c-4a0f-968f-2994a9a0ffc0))
-  (no_connect (at 102.87 62.23) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a3))
-  (no_connect (at 64.77 50.8) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a4))
-  (no_connect (at 64.77 53.34) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a5))
-  (no_connect (at 64.77 63.5) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a6))
-  (no_connect (at 64.77 60.96) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a7))
-  (no_connect (at 64.77 76.2) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a8))
-  (no_connect (at 64.77 78.74) (uuid 53e41c34-ad1b-4050-a599-7795dfd710a9))
-  (no_connect (at 64.77 86.36) (uuid 53e41c34-ad1b-4050-a599-7795dfd710aa))
-  (no_connect (at 64.77 88.9) (uuid 53e41c34-ad1b-4050-a599-7795dfd710ab))
-  (no_connect (at 102.87 74.93) (uuid 53e41c34-ad1b-4050-a599-7795dfd710ac))
-  (no_connect (at 64.77 104.14) (uuid 53e41c34-ad1b-4050-a599-7795dfd710ad))
-  (no_connect (at 64.77 129.54) (uuid 53e41c34-ad1b-4050-a599-7795dfd710ae))
-  (no_connect (at 64.77 101.6) (uuid 53e41c34-ad1b-4050-a599-7795dfd710af))
-  (no_connect (at 64.77 111.76) (uuid 53e41c34-ad1b-4050-a599-7795dfd710b0))
-  (no_connect (at 64.77 114.3) (uuid 53e41c34-ad1b-4050-a599-7795dfd710b1))
-  (no_connect (at 64.77 127) (uuid 53e41c34-ad1b-4050-a599-7795dfd710b2))
-  (no_connect (at 64.77 137.16) (uuid 53e41c34-ad1b-4050-a599-7795dfd710b3))
-  (no_connect (at 64.77 139.7) (uuid 53e41c34-ad1b-4050-a599-7795dfd710b4))
-
-  (wire (pts (xy 226.06 95.25) (xy 241.3 95.25))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 02aaa425-e201-411d-9c20-7b8e850eb4dd)
-  )
-  (wire (pts (xy 154.94 72.39) (xy 154.94 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 06f73858-17be-43ec-98e9-f8ccedc5f8f3)
-  )
-  (wire (pts (xy 146.05 80.01) (xy 146.05 85.09))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 0cba1e79-7a97-47cd-a304-8daa4af76562)
-  )
-  (wire (pts (xy 190.5 72.39) (xy 190.5 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 1484dfd9-bb88-4136-bf94-a47e4676d68e)
-  )
-  (wire (pts (xy 154.94 80.01) (xy 154.94 85.09))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 16a2dd9d-1e83-4e67-a6a5-0579a634927d)
-  )
-  (wire (pts (xy 241.3 82.55) (xy 226.06 82.55))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 19d1239b-1eb4-48ca-9ee0-d3e00a556535)
-  )
-  (wire (pts (xy 210.82 80.01) (xy 212.09 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 1a8bed67-3c86-4c4b-aee8-d2d9af819a49)
-  )
-  (wire (pts (xy 172.72 97.79) (xy 177.8 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 1c7dfc69-97a1-49a8-a148-4a8d5ef0bf33)
-  )
-  (wire (pts (xy 177.8 72.39) (xy 177.8 80.01))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 1d8aa35c-d72b-4947-b3fd-357848afaaec)
-  )
-  (wire (pts (xy 102.87 121.92) (xy 110.49 121.92))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 21d1f505-2091-41d1-9295-e6177e8c69a8)
-  )
-  (wire (pts (xy 212.09 72.39) (xy 212.09 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 25fedc93-b99b-40d8-8263-2f90e3c2a1cd)
-  )
-  (wire (pts (xy 133.35 72.39) (xy 133.35 80.01))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 2845b82f-e331-4ac9-8f70-7d4468be353f)
-  )
-  (wire (pts (xy 64.77 81.28) (xy 74.93 81.28))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 2bc25b79-c4e9-47fe-87bd-391f311278a3)
-  )
-  (wire (pts (xy 199.39 72.39) (xy 199.39 80.01))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 2f23aaae-8f36-4a4c-8818-749090b3a5ec)
-  )
-  (wire (pts (xy 146.05 72.39) (xy 146.05 80.01))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 314f23cb-69ad-4f29-9de0-f730ddeffbef)
-  )
-  (wire (pts (xy 133.35 80.01) (xy 133.35 85.09))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 35a719cb-8946-4ad0-bd66-0f79c927ff7c)
-  )
-  (wire (pts (xy 241.3 85.09) (xy 226.06 85.09))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 386d87e0-bfbd-4749-a32c-0f5977eff60b)
-  )
-  (wire (pts (xy 199.39 97.79) (xy 212.09 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 3f842cf6-0625-4fd9-9ba4-2a12a3dbc00c)
-  )
-  (wire (pts (xy 133.35 97.79) (xy 146.05 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 437fd82a-360c-447b-949d-7b7d1cf49925)
-  )
-  (wire (pts (xy 154.94 97.79) (xy 167.64 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 437fd82a-360c-447b-949d-7b7d1cf49928)
-  )
-  (wire (pts (xy 212.09 95.25) (xy 212.09 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 437fd82a-360c-447b-949d-7b7d1cf4992c)
-  )
-  (wire (pts (xy 199.39 95.25) (xy 199.39 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 49ec53d0-8b8d-49c8-b864-54ae29bca1bd)
-  )
-  (wire (pts (xy 154.94 80.01) (xy 156.21 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 4a2a3b26-caf5-4c18-95fc-d33914807605)
-  )
-  (wire (pts (xy 102.87 72.39) (xy 110.49 72.39))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 4f3070ed-9d45-490e-90eb-e6735bd6b8b5)
-  )
-  (wire (pts (xy 102.87 69.85) (xy 110.49 69.85))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 5314b9d4-60f1-4ae1-96de-9b5f38f5211e)
-  )
-  (wire (pts (xy 171.45 100.33) (xy 172.72 100.33))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 53253052-0834-4207-9dea-19205df11b8c)
-  )
-  (wire (pts (xy 167.64 72.39) (xy 167.64 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 55c4bf48-67fe-44eb-9222-0d62a38bd6e8)
-  )
-  (wire (pts (xy 199.39 80.01) (xy 200.66 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 57d2879c-74ae-43c9-b025-463810e0a0a3)
-  )
-  (wire (pts (xy 64.77 58.42) (xy 74.93 58.42))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 5b013325-941f-42d6-b032-f7523cad0b25)
-  )
-  (wire (pts (xy 102.87 67.31) (xy 110.49 67.31))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 5c42da2d-5ca5-4605-ac1a-78d392466a97)
-  )
-  (wire (pts (xy 154.94 97.79) (xy 154.94 95.25))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5cd1dd4f-4008-4b9a-b1ee-08b159fc81e7)
-  )
-  (wire (pts (xy 133.35 80.01) (xy 134.62 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 60829eca-fa80-49ed-9f8d-02069cd4128e)
-  )
-  (wire (pts (xy 190.5 80.01) (xy 190.5 85.09))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 62c373b0-0557-4507-855e-3c03f09c73b3)
-  )
-  (wire (pts (xy 190.5 95.25) (xy 190.5 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 6508d326-7ac2-4596-9f3b-a776db51a996)
-  )
-  (wire (pts (xy 241.3 80.01) (xy 226.06 80.01))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 658443d7-660a-4c96-bdaf-177987722778)
-  )
-  (wire (pts (xy 144.78 80.01) (xy 146.05 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 6b4a9379-1da9-4736-87ea-937ffc80905b)
-  )
-  (wire (pts (xy 190.5 97.79) (xy 199.39 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 70011709-565d-4649-ae30-1038460db4df)
-  )
-  (wire (pts (xy 177.8 80.01) (xy 177.8 85.09))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 7ccf26f8-c13a-479c-9e7f-e9d556344325)
-  )
-  (wire (pts (xy 64.77 106.68) (xy 74.93 106.68))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 7d30a630-30b1-4bef-9e1b-5a500fb1c59e)
-  )
-  (wire (pts (xy 64.77 134.62) (xy 74.93 134.62))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 857fd0f3-c3a6-4541-83c0-bcfa45de9f9f)
-  )
-  (wire (pts (xy 64.77 109.22) (xy 74.93 109.22))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 8c929ca9-5c9f-4239-8faa-a64392b767e9)
-  )
-  (wire (pts (xy 167.64 97.79) (xy 172.72 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 8f9ea082-b1e3-442a-bea8-0f6871de0e62)
-  )
-  (wire (pts (xy 241.3 92.71) (xy 226.06 92.71))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 93655dbd-fb95-47ca-b0bf-54fcf9a47b1f)
-  )
-  (wire (pts (xy 199.39 80.01) (xy 199.39 85.09))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 957e13ac-505c-4c87-80bf-2960add9c6cc)
-  )
-  (wire (pts (xy 102.87 116.84) (xy 110.49 116.84))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 964c6e02-0c58-460a-b1c8-f097454868e9)
-  )
-  (wire (pts (xy 172.72 97.79) (xy 172.72 100.33))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 96833194-e7de-4f49-9141-74a4fa6de6af)
-  )
-  (wire (pts (xy 102.87 124.46) (xy 110.49 124.46))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 9a6b8a8b-77e2-4600-a3a1-ed9815261a30)
-  )
-  (wire (pts (xy 166.37 80.01) (xy 167.64 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid a180aa03-cc6f-46ae-81cc-3a6b7688ac3b)
-  )
-  (wire (pts (xy 102.87 119.38) (xy 110.49 119.38))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid a7bf2d53-ef75-4692-bf0d-093101f5b77e)
-  )
-  (wire (pts (xy 177.8 95.25) (xy 177.8 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid aa60b1ce-221f-4e1d-97a4-c9adb030e5db)
-  )
-  (wire (pts (xy 189.23 80.01) (xy 190.5 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid aded2054-3775-47fc-86d7-29d53e3755df)
-  )
-  (wire (pts (xy 146.05 97.79) (xy 154.94 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ae0d090b-d4e2-45c1-bc84-87160d8e7d00)
-  )
-  (wire (pts (xy 64.77 129.54) (xy 74.93 129.54))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid ae3c8119-17e1-4219-9a1f-ab8c64ee6903)
-  )
-  (wire (pts (xy 64.77 132.08) (xy 74.93 132.08))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid ae3c8119-17e1-4219-9a1f-ab8c64ee6904)
-  )
-  (wire (pts (xy 241.3 90.17) (xy 226.06 90.17))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid b25a5503-bb12-4361-95cb-5f0937062655)
-  )
-  (wire (pts (xy 133.35 95.25) (xy 133.35 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid b763bf6c-093c-41e2-ab94-3f42c1d2f1c1)
-  )
-  (wire (pts (xy 241.3 97.79) (xy 226.06 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid c2ed3b5d-bbb1-4950-904f-f8003bf69739)
-  )
-  (wire (pts (xy 177.8 97.79) (xy 190.5 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid c44cacb4-fc58-4bdd-bc06-cf0294ef4050)
-  )
-  (wire (pts (xy 172.72 100.33) (xy 172.72 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ceea5c15-681e-43e9-9901-13239eb6b70f)
-  )
-  (wire (pts (xy 241.3 87.63) (xy 226.06 87.63))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid cf978a1b-f10d-43cb-b407-cc8f21f2437e)
-  )
-  (wire (pts (xy 167.64 80.01) (xy 167.64 85.09))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid d71f07ec-521a-440b-8574-d1ad52a14ad3)
-  )
-  (wire (pts (xy 102.87 64.77) (xy 110.49 64.77))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid da8afeba-d6df-4dcf-9fe9-1e98e08ff6dd)
-  )
-  (wire (pts (xy 64.77 83.82) (xy 74.93 83.82))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid e1cf458f-9ae1-4536-80ff-76bae623512c)
-  )
-  (wire (pts (xy 212.09 80.01) (xy 212.09 85.09))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid e5f52ce2-1545-44a2-a156-c9ca8ebc6c9a)
-  )
-  (wire (pts (xy 177.8 80.01) (xy 179.07 80.01))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid e9f3f2ba-f30c-40a0-b769-e0df77b56488)
-  )
-  (wire (pts (xy 146.05 95.25) (xy 146.05 97.79))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid f0315deb-900f-4d1e-9581-c95b7625bd76)
-  )
-  (wire (pts (xy 167.64 95.25) (xy 167.64 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid f0c55193-0df1-4a16-a029-64e45ebc73c3)
-  )
-  (wire (pts (xy 64.77 55.88) (xy 74.93 55.88))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid f8462644-768d-43aa-901c-a5122ab473c4)
-  )
-
-  (label "RING4" (at 74.93 134.62 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 020815fa-59cf-40f7-b970-a826c25a3af8)
-  )
-  (label "RING2" (at 74.93 83.82 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 0761648c-0e92-4e36-b4f4-208f0f59e0f8)
-  )
-  (label "TIP4" (at 74.93 132.08 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 08752d34-9336-447e-bb08-72b50c2dfc45)
-  )
-  (label "RING1" (at 146.05 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 0c1473b0-1965-42f6-ae94-582d0b77ec1e)
-  )
-  (label "TIP4" (at 226.06 82.55 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 0e0cecaa-acf1-4b9f-b695-a4793ea24bea)
-  )
-  (label "TIP3" (at 74.93 106.68 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 1dfb29bc-99d0-4775-843c-da1a4e3c2680)
-  )
-  (label "TIP2" (at 74.93 81.28 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 266f4be1-a2a2-4e0b-b9c1-6c6ca1be20d5)
-  )
-  (label "RING2" (at 167.64 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 2edf9fbe-74b8-4986-a201-6fc234d2b17a)
-  )
-  (label "RING1" (at 74.93 58.42 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 3d4dc3dd-ba47-4418-a0f9-a3bcf87fcab1)
-  )
-  (label "RING3" (at 74.93 109.22 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 415c55ff-d933-41da-8da8-73bb6b0c0820)
-  )
-  (label "RING2" (at 226.06 95.25 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4f36a226-d242-45b1-9ab3-b60f98771be9)
-  )
-  (label "RING1" (at 110.49 69.85 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 4f9ef0ea-b844-4ba3-aef3-272609f6502c)
-  )
-  (label "TIP4" (at 199.39 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 51255fef-60e7-4778-80da-8eb59e49687b)
-  )
-  (label "RING3" (at 190.5 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 5bb86af2-6155-4ab8-bcdc-62890b5d8d55)
-  )
-  (label "RING1" (at 226.06 90.17 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5e9e7c17-1cc0-4459-ad3e-115794baa3ed)
-  )
-  (label "TIP1" (at 133.35 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 695112ec-ed0e-4670-acd0-adc895ecb533)
-  )
-  (label "RING4" (at 226.06 80.01 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 697891a3-3967-46aa-9d2b-52251090ed39)
-  )
-  (label "TIP4" (at 110.49 124.46 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 7d75971e-eab7-4e20-be69-f0868c90c721)
-  )
-  (label "TIP1" (at 74.93 55.88 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 8121f3b0-918c-4e95-b44a-dc65ee13993e)
-  )
-  (label "RING4" (at 110.49 116.84 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 81e784b2-a67d-451a-ac1a-5bdb5ebf671c)
-  )
-  (label "TIP2" (at 110.49 72.39 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 826f9da2-5bf8-4f73-a816-2e7c3176c39f)
-  )
-  (label "TIP2" (at 226.06 97.79 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 8c927c93-f38a-4969-852d-75d64ec8d11b)
-  )
-  (label "RING3" (at 226.06 85.09 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 8f1fbe43-8657-4332-ba0b-147e18433c3e)
-  )
-  (label "TIP2" (at 154.94 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid a05ad901-cf4a-45a8-87a1-42106dc1269c)
-  )
-  (label "RING4" (at 212.09 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid a22ceab5-c89a-4b53-823e-fde190a57d5f)
-  )
-  (label "TIP1" (at 226.06 87.63 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid a238246b-4b92-468c-b2c2-022fa05f3fd5)
-  )
-  (label "TIP1" (at 110.49 67.31 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid a5b1ced2-e742-497a-b6dd-c9543b41991a)
-  )
-  (label "TIP3" (at 110.49 119.38 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid abfefe72-a321-49ff-9c62-a64e936f2130)
-  )
-  (label "RING2" (at 110.49 64.77 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid b9706cef-2450-469f-958e-6e3d8207e0d3)
-  )
-  (label "TIP3" (at 226.06 92.71 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c863eb09-48f1-4d2e-a488-d2ecdce67e51)
-  )
-  (label "RING3" (at 110.49 121.92 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid f7cc3cd8-b9d8-4545-bc68-acf588e3948e)
-  )
-  (label "TIP3" (at 177.8 72.39 270)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid f7ed6548-7e30-4d5c-a935-ee6ad3df3aca)
-  )
-
-  (symbol (lib_id "shadystake-rescue:8P8C-Connector") (at 251.46 90.17 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e76be8e)
-    (property "Reference" "J7" (id 0) (at 259.842 87.7316 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "8P8C" (id 1) (at 259.842 90.043 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Shadystake:8P8C_Hor" (id 2) (at 251.46 89.535 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 251.46 89.535 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 47614b7f-400b-484a-ac57-0e37fbde02f3))
-    (pin "2" (uuid d8f7611f-fce8-4b6c-a573-dc06738d9ed7))
-    (pin "3" (uuid 9138c4ca-51f8-4c7c-b4dd-0b3276704e74))
-    (pin "4" (uuid 01630670-6374-4495-b502-d8c76ca18987))
-    (pin "5" (uuid 57cabff7-250e-48ed-a1f0-d7ccbb45f234))
-    (pin "6" (uuid 68bbe4b5-7a2e-429a-80f6-17624eddfe0c))
-    (pin "7" (uuid 25021447-bfad-4bba-9a98-dc4c24020458))
-    (pin "8" (uuid 6b137924-f69f-4dfe-9622-283bf74c9c18))
-  )
-
-  (symbol (lib_id "shadystake-rescue:6P6C-Connector") (at 54.61 58.42 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e77093f)
-    (property "Reference" "J1" (id 0) (at 56.0578 44.0182 0))
-    (property "Value" "6P6C" (id 1) (at 56.0578 46.3296 0))
-    (property "Footprint" "Shadystake:6P4C_Vert" (id 2) (at 54.61 57.785 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 54.61 57.785 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 346da876-d4bc-4c3d-8ff6-ba212187418a))
-    (pin "2" (uuid e73e49c7-5f6d-4fa6-a500-a909f6ed4f54))
-    (pin "3" (uuid 3c795bdd-c842-4758-9cbc-93f513a16ce4))
-    (pin "4" (uuid 619a2a13-6f65-44e6-a08d-f9b2d26d0aa2))
-    (pin "5" (uuid a648393f-959f-4eef-88ed-9c384fe532ac))
-    (pin "6" (uuid d4e1f4d4-244a-4e0d-9e28-40e9743c7a6f))
-  )
-
-  (symbol (lib_id "shadystake-rescue:6P6C-Connector") (at 54.61 83.82 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e774911)
-    (property "Reference" "J2" (id 0) (at 56.0578 69.4182 0))
-    (property "Value" "6P6C" (id 1) (at 56.0578 71.7296 0))
-    (property "Footprint" "Shadystake:6P4C_Vert" (id 2) (at 54.61 83.185 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 54.61 83.185 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1ed78533-bb21-466a-948c-63df04330b4e))
-    (pin "2" (uuid b098088a-9ddb-4150-b2c0-96380c079107))
-    (pin "3" (uuid 49b4b2ac-eb90-4be1-8513-74458330d86a))
-    (pin "4" (uuid 8bb0b940-4cea-4a05-a399-432605b95c77))
-    (pin "5" (uuid 21d412f5-5336-489f-a6c5-447c578f4333))
-    (pin "6" (uuid ecbbb59b-1d3f-4fb6-a2ab-20fb7c16e6fd))
-  )
-
-  (symbol (lib_id "shadystake-rescue:6P6C-Connector") (at 54.61 109.22 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e775c26)
-    (property "Reference" "J3" (id 0) (at 56.0578 94.8182 0))
-    (property "Value" "6P6C" (id 1) (at 56.0578 97.1296 0))
-    (property "Footprint" "Shadystake:6P4C_Vert" (id 2) (at 54.61 108.585 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 54.61 108.585 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 95d68692-fdd5-4f2a-b8a7-c5dfa9524750))
-    (pin "2" (uuid e0bcd669-820c-42e0-bf80-8eb81f516661))
-    (pin "3" (uuid c6234223-6c46-4ffc-9d58-3123b54807e5))
-    (pin "4" (uuid 662316ef-667f-43f7-805b-0c3391838ba1))
-    (pin "5" (uuid e5d2032f-4df8-4381-8f5f-64dc5b2e9a68))
-    (pin "6" (uuid fafdaef5-28e1-4e6d-92e9-41366b58117e))
-  )
-
-  (symbol (lib_id "shadystake-rescue:6P6C-Connector") (at 54.61 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e776296)
-    (property "Reference" "J4" (id 0) (at 56.0578 120.2182 0))
-    (property "Value" "6P6C" (id 1) (at 56.0578 122.5296 0))
-    (property "Footprint" "Shadystake:6P4C_Vert" (id 2) (at 54.61 133.985 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 54.61 133.985 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 421120bb-947b-40ca-b89b-b146c6a64c9c))
-    (pin "2" (uuid c6e0985d-67e2-4869-944a-e30ec7a98472))
-    (pin "3" (uuid 884260df-03d3-4b7e-9742-3c3f600c2953))
-    (pin "4" (uuid 7146b539-fc9c-439f-9a4d-5a9db506eaed))
-    (pin "5" (uuid a45f9238-6fe1-4209-a6cb-e9fc940e851d))
-    (pin "6" (uuid 8469f544-8d72-4ebd-a1dc-987043c7948a))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 133.35 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e77f6d5)
-    (property "Reference" "E1" (id 0) (at 128.524 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 130.8354 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 135.128 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 133.35 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c230525d-27db-4f88-b353-6295089b2747))
-    (pin "2" (uuid edda6136-250d-42ea-90f2-f07c60473718))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 146.05 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e77fd1f)
-    (property "Reference" "E2" (id 0) (at 141.224 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 143.5354 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 147.828 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 146.05 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3c0cd742-fc12-4034-9486-5bb95647e90d))
-    (pin "2" (uuid 0025f15f-4492-4ac6-b7e5-8bd5a3e6a954))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 167.64 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e77fe7e)
-    (property "Reference" "E4" (id 0) (at 160.274 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 165.1254 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 169.418 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 167.64 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dde67886-c075-460b-8b7c-29090f145aec))
-    (pin "2" (uuid 388d5827-f0dd-4749-95f5-4fe5896fe312))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 154.94 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e7804e5)
-    (property "Reference" "E3" (id 0) (at 150.114 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 152.4254 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 156.718 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 154.94 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 30c02858-fb10-4c0e-bf6a-7e8610289b4c))
-    (pin "2" (uuid b5241c8a-7950-469d-a1d1-66259e280068))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 177.8 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e780786)
-    (property "Reference" "E5" (id 0) (at 172.974 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 175.2854 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 179.578 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 177.8 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7f1f0190-9704-42c6-a2a8-43a6869fa94e))
-    (pin "2" (uuid a7190d11-21f7-4377-89ff-4c139617aa9d))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 190.5 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e780e1b)
-    (property "Reference" "E6" (id 0) (at 185.674 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 187.9854 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 192.278 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 190.5 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 749f769a-1ab8-44d1-ba8e-113a312b5c34))
-    (pin "2" (uuid 4f24640f-93fa-426b-866b-7f10b5c73116))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 199.39 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e7810bc)
-    (property "Reference" "E7" (id 0) (at 194.564 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 196.8754 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 201.168 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 199.39 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2e2b33ae-2e7d-4b9b-b496-1a3bf42a4d99))
-    (pin "2" (uuid 998a48f9-e040-4743-aa09-2fad6e5e4303))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 212.09 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005e781e02)
-    (property "Reference" "E8" (id 0) (at 207.264 90.17 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 209.5754 90.17 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 213.868 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 212.09 90.17 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f1863cd2-8813-44e9-8843-12f072925871))
-    (pin "2" (uuid 8d5ff76d-c74d-4022-aeaf-6239e54b74d8))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 161.29 80.01 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 0344f435-3dd8-43ba-b18c-7b81844faf76)
-    (property "Reference" "E10" (id 0) (at 161.29 84.836 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 161.29 82.5246 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 161.29 78.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 161.29 80.01 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 73ae8a1d-1dc3-4cbb-93c3-14506fdcc400))
-    (pin "2" (uuid e85660a9-f33f-4100-a292-06f04e90368d))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 133.35 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 0a098971-8170-4313-af7d-cc4b35a48563)
-    (property "Reference" "TP1" (id 0) (at 135.89 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 135.89 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 138.43 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 138.43 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid aacf5ec2-30a4-4939-ae8d-4c1e1c96314e))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 184.15 80.01 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 0ed11af5-0934-43bf-b32a-17d5b78ef9bf)
-    (property "Reference" "E11" (id 0) (at 184.15 84.836 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 184.15 82.5246 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 184.15 78.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 184.15 80.01 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fd50d26f-2051-4bb2-bcfb-c8c8f91e64e6))
-    (pin "2" (uuid e86952a5-c9e7-4e95-b667-3d1338c579e6))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 190.5 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 16866a64-c8d3-4fa6-87e7-e15e690191a6)
-    (property "Reference" "TP6" (id 0) (at 193.04 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 193.04 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 195.58 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 195.58 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7f9e909c-32ca-4ef7-8021-261411ab3bf9))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 212.09 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 1d3ea86f-e865-473d-82a1-7f4a62523f60)
-    (property "Reference" "TP8" (id 0) (at 214.63 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 214.63 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 217.17 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 217.17 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 271e7791-7e74-43cf-8163-daf45630e8b6))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 205.74 80.01 180) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 2c110285-a58c-48e5-8202-0cf404b637f9)
-    (property "Reference" "E12" (id 0) (at 205.74 84.836 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 205.74 82.5246 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 205.74 78.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 205.74 80.01 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 766387e0-1905-4a2f-98cf-a9b7b94805b3))
-    (pin "2" (uuid 1067be5a-2b81-4be0-8acb-b3aa03896d9c))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 199.39 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 3190d7e0-a61f-4ca4-b327-9b533cabbe43)
-    (property "Reference" "TP7" (id 0) (at 201.93 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 201.93 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 204.47 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 204.47 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 64c48484-8465-49a5-a558-e1f82bdf63d4))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 167.64 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 3a9d0b00-96d7-4fd0-bdc5-d104420acca5)
-    (property "Reference" "TP4" (id 0) (at 170.18 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 170.18 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 172.72 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 172.72 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4d86b85f-b3aa-414c-bd80-3bd624e67a28))
-  )
-
-  (symbol (lib_id "shadystake-rescue:6P6C-Connector") (at 92.71 121.92 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 723fb613-a350-4201-8db7-5e55947d06e9)
-    (property "Reference" "J6" (id 0) (at 94.1578 107.5182 0))
-    (property "Value" "6P6C" (id 1) (at 94.1578 109.8296 0))
-    (property "Footprint" "Shadystake:6P4C_Vert" (id 2) (at 92.71 121.285 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 92.71 121.285 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 560cec71-c6dc-454c-a8ec-c573d9a1f8c8))
-    (pin "2" (uuid 10a2a6a1-3457-46ff-8256-c1bab03f67dc))
-    (pin "3" (uuid 4a091a6f-a189-48e4-956e-0fad5fbd6862))
-    (pin "4" (uuid 5fcfa42f-9c01-4f21-a37f-407129c03fc7))
-    (pin "5" (uuid c29160f0-8067-4eec-9d72-a02cf0eb73db))
-    (pin "6" (uuid 184bb0eb-64af-43b5-8675-81b8d9778722))
-  )
-
-  (symbol (lib_id "shadystake-rescue:6P6C-Connector") (at 92.71 69.85 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 7cba2845-987e-4ef7-9f17-6058946e05f1)
-    (property "Reference" "J5" (id 0) (at 94.1578 55.4482 0))
-    (property "Value" "6P6C" (id 1) (at 94.1578 57.7596 0))
-    (property "Footprint" "Shadystake:6P4C_Vert" (id 2) (at 92.71 69.215 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 92.71 69.215 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5220e261-2700-4749-932e-ac5ca95ab2f8))
-    (pin "2" (uuid 5743201b-b7eb-4e64-8bb7-1faa4f643de1))
-    (pin "3" (uuid 775f01d7-9594-46a8-956e-d2cd2d8cebf3))
-    (pin "4" (uuid a24f40bc-9327-4c01-a76e-3547c732ea2a))
-    (pin "5" (uuid dc8ea26a-05da-439f-9442-9f6a8b2827b0))
-    (pin "6" (uuid 2c5be382-a333-4d32-b42e-539d0a14b69b))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 146.05 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 852d7eb3-be75-4a91-a77c-983a0b48cb78)
-    (property "Reference" "TP2" (id 0) (at 148.59 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 148.59 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 151.13 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 151.13 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9a9b3927-c7e1-4560-999f-db27cf281135))
-  )
-
-  (symbol (lib_id "shadystake-rescue:SPARK_GAP-Device") (at 139.7 80.01 180) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid a099766c-5db3-4006-8bf9-84d99ea23762)
-    (property "Reference" "E9" (id 0) (at 139.7 84.836 0))
-    (property "Value" "SPARK_GAP" (id 1) (at 139.7 82.5246 0))
-    (property "Footprint" "Shadystake:Spark_Gap_Teeth" (id 2) (at 139.7 78.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 139.7 80.01 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c6b4bf60-d044-40a7-9b09-dffa07a1f37c))
-    (pin "2" (uuid 1475a5f9-8faf-46ae-9dbe-6e17df352d0f))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 154.94 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid acce9e8d-1af5-4185-9b26-f4e12168abf6)
-    (property "Reference" "TP3" (id 0) (at 157.48 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 157.48 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 160.02 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 160.02 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 501985fd-73cc-464d-b22c-d708f3928b57))
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 171.45 100.33 90) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid b50478ac-bb91-419c-b7a3-b2d2cb026fe1)
-    (property "Reference" "#FLG0101" (id 0) (at 169.545 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (id 1) (at 167.64 100.3299 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (id 2) (at 171.45 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 171.45 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1c34ca0f-7f23-45f1-985d-46478bcc8fba))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 177.8 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e21fac56-b274-477f-b454-6d91d51c7236)
-    (property "Reference" "TP5" (id 0) (at 180.34 69.0879 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 180.34 70.3579 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Shadystake:TP" (id 2) (at 182.88 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 182.88 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8e62cd32-8c68-4bc2-b2f5-73fa33e413a2))
-  )
-
-  (symbol (lib_id "power:Earth_Protective") (at 172.72 101.6 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e35e25fe-45b5-4f94-89d0-e63b25ba9959)
-    (property "Reference" "#PWR01" (id 0) (at 179.07 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "Earth_Protective" (id 1) (at 184.15 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (id 2) (at 172.72 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 172.72 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 66a0b098-45dc-488a-a413-589370bd6e72))
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
-
-  (symbol_instances
-    (path "/b50478ac-bb91-419c-b7a3-b2d2cb026fe1"
-      (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
-    )
-    (path "/e35e25fe-45b5-4f94-89d0-e63b25ba9959"
-      (reference "#PWR01") (unit 1) (value "Earth_Protective") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005e77f6d5"
-      (reference "E1") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e77fd1f"
-      (reference "E2") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e7804e5"
-      (reference "E3") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e77fe7e"
-      (reference "E4") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e780786"
-      (reference "E5") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e780e1b"
-      (reference "E6") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e7810bc"
-      (reference "E7") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e781e02"
-      (reference "E8") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/a099766c-5db3-4006-8bf9-84d99ea23762"
-      (reference "E9") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/0344f435-3dd8-43ba-b18c-7b81844faf76"
-      (reference "E10") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/0ed11af5-0934-43bf-b32a-17d5b78ef9bf"
-      (reference "E11") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/2c110285-a58c-48e5-8202-0cf404b637f9"
-      (reference "E12") (unit 1) (value "SPARK_GAP") (footprint "Shadystake:Spark_Gap_Teeth")
-    )
-    (path "/00000000-0000-0000-0000-00005e77093f"
-      (reference "J1") (unit 1) (value "6P6C") (footprint "Shadystake:6P4C_Vert")
-    )
-    (path "/00000000-0000-0000-0000-00005e774911"
-      (reference "J2") (unit 1) (value "6P6C") (footprint "Shadystake:6P4C_Vert")
-    )
-    (path "/00000000-0000-0000-0000-00005e775c26"
-      (reference "J3") (unit 1) (value "6P6C") (footprint "Shadystake:6P4C_Vert")
-    )
-    (path "/00000000-0000-0000-0000-00005e776296"
-      (reference "J4") (unit 1) (value "6P6C") (footprint "Shadystake:6P4C_Vert")
-    )
-    (path "/7cba2845-987e-4ef7-9f17-6058946e05f1"
-      (reference "J5") (unit 1) (value "6P6C") (footprint "Shadystake:6P4C_Vert")
-    )
-    (path "/723fb613-a350-4201-8db7-5e55947d06e9"
-      (reference "J6") (unit 1) (value "6P6C") (footprint "Shadystake:6P4C_Vert")
-    )
-    (path "/00000000-0000-0000-0000-00005e76be8e"
-      (reference "J7") (unit 1) (value "8P8C") (footprint "Shadystake:8P8C_Hor")
-    )
-    (path "/0a098971-8170-4313-af7d-cc4b35a48563"
-      (reference "TP1") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/852d7eb3-be75-4a91-a77c-983a0b48cb78"
-      (reference "TP2") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/acce9e8d-1af5-4185-9b26-f4e12168abf6"
-      (reference "TP3") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/3a9d0b00-96d7-4fd0-bdc5-d104420acca5"
-      (reference "TP4") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/e21fac56-b274-477f-b454-6d91d51c7236"
-      (reference "TP5") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/16866a64-c8d3-4fa6-87e7-e15e690191a6"
-      (reference "TP6") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/3190d7e0-a61f-4ca4-b327-9b533cabbe43"
-      (reference "TP7") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-    (path "/1d3ea86f-e865-473d-82a1-7f4a62523f60"
-      (reference "TP8") (unit 1) (value "TestPoint") (footprint "Shadystake:TP")
-    )
-  )
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3085826e-0b13-4a8b-8c8d-a88fd04c6de4")
+	(paper "A4")
+	(lib_symbols
+		(symbol "shadystake-rescue:6P6C-Connector"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "6P6C-Connector"
+				(at 2.54 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "6P6C* RJ12* RJ18* RJ25*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "6P6C-Connector_0_1"
+				(polyline
+					(pts
+						(xy -6.35 3.175) (xy -5.08 3.175) (xy -5.08 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 4.445) (xy -6.35 4.445) (xy -6.35 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 10.16)
+					(end -7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "6P6C-Connector_1_1"
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "shadystake-rescue:8P8C-Connector"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -5.08 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "8P8C-Connector"
+				(at 2.54 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "8P8C-Connector_0_1"
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -3.175) (xy -5.08 -3.175) (xy -5.08 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.715) (xy -6.35 5.715)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 4.445) (xy -6.35 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -6.35 3.175) (xy -6.35 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 12.7)
+					(end -7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "8P8C-Connector_1_1"
+				(pin passive line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 102.87 114.3)
+		(uuid "535d117d-488c-4a0f-968f-2994a9a0ffbf")
+	)
+	(no_connect
+		(at 102.87 127)
+		(uuid "535d117d-488c-4a0f-968f-2994a9a0ffc0")
+	)
+	(no_connect
+		(at 102.87 62.23)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a3")
+	)
+	(no_connect
+		(at 64.77 50.8)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a4")
+	)
+	(no_connect
+		(at 64.77 53.34)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a5")
+	)
+	(no_connect
+		(at 64.77 63.5)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a6")
+	)
+	(no_connect
+		(at 64.77 60.96)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a7")
+	)
+	(no_connect
+		(at 64.77 76.2)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a8")
+	)
+	(no_connect
+		(at 64.77 78.74)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710a9")
+	)
+	(no_connect
+		(at 64.77 86.36)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710aa")
+	)
+	(no_connect
+		(at 64.77 88.9)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710ab")
+	)
+	(no_connect
+		(at 102.87 74.93)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710ac")
+	)
+	(no_connect
+		(at 64.77 104.14)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710ad")
+	)
+	(no_connect
+		(at 64.77 129.54)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710ae")
+	)
+	(no_connect
+		(at 64.77 101.6)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710af")
+	)
+	(no_connect
+		(at 64.77 111.76)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710b0")
+	)
+	(no_connect
+		(at 64.77 114.3)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710b1")
+	)
+	(no_connect
+		(at 64.77 127)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710b2")
+	)
+	(no_connect
+		(at 64.77 137.16)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710b3")
+	)
+	(no_connect
+		(at 64.77 139.7)
+		(uuid "53e41c34-ad1b-4050-a599-7795dfd710b4")
+	)
+	(wire
+		(pts
+			(xy 226.06 95.25) (xy 241.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02aaa425-e201-411d-9c20-7b8e850eb4dd")
+	)
+	(wire
+		(pts
+			(xy 241.3 82.55) (xy 226.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "19d1239b-1eb4-48ca-9ee0-d3e00a556535")
+	)
+	(wire
+		(pts
+			(xy 102.87 121.92) (xy 110.49 121.92)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "21d1f505-2091-41d1-9295-e6177e8c69a8")
+	)
+	(wire
+		(pts
+			(xy 64.77 81.28) (xy 74.93 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "2bc25b79-c4e9-47fe-87bd-391f311278a3")
+	)
+	(wire
+		(pts
+			(xy 241.3 85.09) (xy 226.06 85.09)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "386d87e0-bfbd-4749-a32c-0f5977eff60b")
+	)
+	(wire
+		(pts
+			(xy 102.87 72.39) (xy 110.49 72.39)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "4f3070ed-9d45-490e-90eb-e6735bd6b8b5")
+	)
+	(wire
+		(pts
+			(xy 102.87 69.85) (xy 110.49 69.85)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "5314b9d4-60f1-4ae1-96de-9b5f38f5211e")
+	)
+	(wire
+		(pts
+			(xy 64.77 58.42) (xy 74.93 58.42)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "5b013325-941f-42d6-b032-f7523cad0b25")
+	)
+	(wire
+		(pts
+			(xy 102.87 67.31) (xy 110.49 67.31)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "5c42da2d-5ca5-4605-ac1a-78d392466a97")
+	)
+	(wire
+		(pts
+			(xy 241.3 80.01) (xy 226.06 80.01)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "658443d7-660a-4c96-bdaf-177987722778")
+	)
+	(wire
+		(pts
+			(xy 64.77 106.68) (xy 74.93 106.68)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "7d30a630-30b1-4bef-9e1b-5a500fb1c59e")
+	)
+	(wire
+		(pts
+			(xy 64.77 134.62) (xy 74.93 134.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "857fd0f3-c3a6-4541-83c0-bcfa45de9f9f")
+	)
+	(wire
+		(pts
+			(xy 64.77 109.22) (xy 74.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "8c929ca9-5c9f-4239-8faa-a64392b767e9")
+	)
+	(wire
+		(pts
+			(xy 241.3 92.71) (xy 226.06 92.71)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "93655dbd-fb95-47ca-b0bf-54fcf9a47b1f")
+	)
+	(wire
+		(pts
+			(xy 102.87 116.84) (xy 110.49 116.84)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "964c6e02-0c58-460a-b1c8-f097454868e9")
+	)
+	(wire
+		(pts
+			(xy 102.87 124.46) (xy 110.49 124.46)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "9a6b8a8b-77e2-4600-a3a1-ed9815261a30")
+	)
+	(wire
+		(pts
+			(xy 102.87 119.38) (xy 110.49 119.38)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "a7bf2d53-ef75-4692-bf0d-093101f5b77e")
+	)
+	(wire
+		(pts
+			(xy 64.77 129.54) (xy 74.93 129.54)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "ae3c8119-17e1-4219-9a1f-ab8c64ee6903")
+	)
+	(wire
+		(pts
+			(xy 64.77 132.08) (xy 74.93 132.08)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "ae3c8119-17e1-4219-9a1f-ab8c64ee6904")
+	)
+	(wire
+		(pts
+			(xy 241.3 90.17) (xy 226.06 90.17)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b25a5503-bb12-4361-95cb-5f0937062655")
+	)
+	(wire
+		(pts
+			(xy 241.3 97.79) (xy 226.06 97.79)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c2ed3b5d-bbb1-4950-904f-f8003bf69739")
+	)
+	(wire
+		(pts
+			(xy 241.3 87.63) (xy 226.06 87.63)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "cf978a1b-f10d-43cb-b407-cc8f21f2437e")
+	)
+	(wire
+		(pts
+			(xy 102.87 64.77) (xy 110.49 64.77)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "da8afeba-d6df-4dcf-9fe9-1e98e08ff6dd")
+	)
+	(wire
+		(pts
+			(xy 64.77 83.82) (xy 74.93 83.82)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "e1cf458f-9ae1-4536-80ff-76bae623512c")
+	)
+	(wire
+		(pts
+			(xy 64.77 55.88) (xy 74.93 55.88)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "f8462644-768d-43aa-901c-a5122ab473c4")
+	)
+	(label "RING4"
+		(at 74.93 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "020815fa-59cf-40f7-b970-a826c25a3af8")
+	)
+	(label "RING2"
+		(at 74.93 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0761648c-0e92-4e36-b4f4-208f0f59e0f8")
+	)
+	(label "TIP4"
+		(at 74.93 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08752d34-9336-447e-bb08-72b50c2dfc45")
+	)
+	(label "TIP4"
+		(at 226.06 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e0cecaa-acf1-4b9f-b695-a4793ea24bea")
+	)
+	(label "TIP3"
+		(at 74.93 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1dfb29bc-99d0-4775-843c-da1a4e3c2680")
+	)
+	(label "TIP2"
+		(at 74.93 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "266f4be1-a2a2-4e0b-b9c1-6c6ca1be20d5")
+	)
+	(label "RING1"
+		(at 74.93 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3d4dc3dd-ba47-4418-a0f9-a3bcf87fcab1")
+	)
+	(label "RING3"
+		(at 74.93 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "415c55ff-d933-41da-8da8-73bb6b0c0820")
+	)
+	(label "RING2"
+		(at 226.06 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f36a226-d242-45b1-9ab3-b60f98771be9")
+	)
+	(label "RING1"
+		(at 110.49 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f9ef0ea-b844-4ba3-aef3-272609f6502c")
+	)
+	(label "RING1"
+		(at 226.06 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e9e7c17-1cc0-4459-ad3e-115794baa3ed")
+	)
+	(label "RING4"
+		(at 226.06 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "697891a3-3967-46aa-9d2b-52251090ed39")
+	)
+	(label "TIP4"
+		(at 110.49 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7d75971e-eab7-4e20-be69-f0868c90c721")
+	)
+	(label "TIP1"
+		(at 74.93 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8121f3b0-918c-4e95-b44a-dc65ee13993e")
+	)
+	(label "RING4"
+		(at 110.49 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81e784b2-a67d-451a-ac1a-5bdb5ebf671c")
+	)
+	(label "TIP2"
+		(at 110.49 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "826f9da2-5bf8-4f73-a816-2e7c3176c39f")
+	)
+	(label "TIP2"
+		(at 226.06 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c927c93-f38a-4969-852d-75d64ec8d11b")
+	)
+	(label "RING3"
+		(at 226.06 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f1fbe43-8657-4332-ba0b-147e18433c3e")
+	)
+	(label "TIP1"
+		(at 226.06 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a238246b-4b92-468c-b2c2-022fa05f3fd5")
+	)
+	(label "TIP1"
+		(at 110.49 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5b1ced2-e742-497a-b6dd-c9543b41991a")
+	)
+	(label "TIP3"
+		(at 110.49 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "abfefe72-a321-49ff-9c62-a64e936f2130")
+	)
+	(label "RING2"
+		(at 110.49 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b9706cef-2450-469f-958e-6e3d8207e0d3")
+	)
+	(label "TIP3"
+		(at 226.06 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c863eb09-48f1-4d2e-a488-d2ecdce67e51")
+	)
+	(label "RING3"
+		(at 110.49 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7cc3cd8-b9d8-4545-bc68-acf588e3948e")
+	)
+	(symbol
+		(lib_id "shadystake-rescue:8P8C-Connector")
+		(at 251.46 90.17 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005e76be8e")
+		(property "Reference" "J7"
+			(at 259.842 87.7316 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "8P8C"
+			(at 259.842 90.043 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Shadystake:8P8C_Hor"
+			(at 251.46 89.535 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 89.535 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47614b7f-400b-484a-ac57-0e37fbde02f3")
+		)
+		(pin "2"
+			(uuid "d8f7611f-fce8-4b6c-a573-dc06738d9ed7")
+		)
+		(pin "3"
+			(uuid "9138c4ca-51f8-4c7c-b4dd-0b3276704e74")
+		)
+		(pin "4"
+			(uuid "01630670-6374-4495-b502-d8c76ca18987")
+		)
+		(pin "5"
+			(uuid "57cabff7-250e-48ed-a1f0-d7ccbb45f234")
+		)
+		(pin "6"
+			(uuid "68bbe4b5-7a2e-429a-80f6-17624eddfe0c")
+		)
+		(pin "7"
+			(uuid "25021447-bfad-4bba-9a98-dc4c24020458")
+		)
+		(pin "8"
+			(uuid "6b137924-f69f-4dfe-9622-283bf74c9c18")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "shadystake-rescue:6P6C-Connector")
+		(at 54.61 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005e77093f")
+		(property "Reference" "J1"
+			(at 56.0578 44.0182 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6P6C"
+			(at 56.0578 46.3296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Shadystake:6P4C_Vert"
+			(at 54.61 57.785 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 57.785 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "346da876-d4bc-4c3d-8ff6-ba212187418a")
+		)
+		(pin "2"
+			(uuid "e73e49c7-5f6d-4fa6-a500-a909f6ed4f54")
+		)
+		(pin "3"
+			(uuid "3c795bdd-c842-4758-9cbc-93f513a16ce4")
+		)
+		(pin "4"
+			(uuid "619a2a13-6f65-44e6-a08d-f9b2d26d0aa2")
+		)
+		(pin "5"
+			(uuid "a648393f-959f-4eef-88ed-9c384fe532ac")
+		)
+		(pin "6"
+			(uuid "d4e1f4d4-244a-4e0d-9e28-40e9743c7a6f")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "shadystake-rescue:6P6C-Connector")
+		(at 54.61 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005e774911")
+		(property "Reference" "J2"
+			(at 56.0578 69.4182 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6P6C"
+			(at 56.0578 71.7296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Shadystake:6P4C_Vert"
+			(at 54.61 83.185 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 83.185 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ed78533-bb21-466a-948c-63df04330b4e")
+		)
+		(pin "2"
+			(uuid "b098088a-9ddb-4150-b2c0-96380c079107")
+		)
+		(pin "3"
+			(uuid "49b4b2ac-eb90-4be1-8513-74458330d86a")
+		)
+		(pin "4"
+			(uuid "8bb0b940-4cea-4a05-a399-432605b95c77")
+		)
+		(pin "5"
+			(uuid "21d412f5-5336-489f-a6c5-447c578f4333")
+		)
+		(pin "6"
+			(uuid "ecbbb59b-1d3f-4fb6-a2ab-20fb7c16e6fd")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "shadystake-rescue:6P6C-Connector")
+		(at 54.61 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005e775c26")
+		(property "Reference" "J3"
+			(at 56.0578 94.8182 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6P6C"
+			(at 56.0578 97.1296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Shadystake:6P4C_Vert"
+			(at 54.61 108.585 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 108.585 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95d68692-fdd5-4f2a-b8a7-c5dfa9524750")
+		)
+		(pin "2"
+			(uuid "e0bcd669-820c-42e0-bf80-8eb81f516661")
+		)
+		(pin "3"
+			(uuid "c6234223-6c46-4ffc-9d58-3123b54807e5")
+		)
+		(pin "4"
+			(uuid "662316ef-667f-43f7-805b-0c3391838ba1")
+		)
+		(pin "5"
+			(uuid "e5d2032f-4df8-4381-8f5f-64dc5b2e9a68")
+		)
+		(pin "6"
+			(uuid "fafdaef5-28e1-4e6d-92e9-41366b58117e")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "shadystake-rescue:6P6C-Connector")
+		(at 54.61 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005e776296")
+		(property "Reference" "J4"
+			(at 56.0578 120.2182 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6P6C"
+			(at 56.0578 122.5296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Shadystake:6P4C_Vert"
+			(at 54.61 133.985 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 133.985 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "421120bb-947b-40ca-b89b-b146c6a64c9c")
+		)
+		(pin "2"
+			(uuid "c6e0985d-67e2-4869-944a-e30ec7a98472")
+		)
+		(pin "3"
+			(uuid "884260df-03d3-4b7e-9742-3c3f600c2953")
+		)
+		(pin "4"
+			(uuid "7146b539-fc9c-439f-9a4d-5a9db506eaed")
+		)
+		(pin "5"
+			(uuid "a45f9238-6fe1-4209-a6cb-e9fc940e851d")
+		)
+		(pin "6"
+			(uuid "8469f544-8d72-4ebd-a1dc-987043c7948a")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "shadystake-rescue:6P6C-Connector")
+		(at 92.71 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "723fb613-a350-4201-8db7-5e55947d06e9")
+		(property "Reference" "J6"
+			(at 94.1578 107.5182 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6P6C"
+			(at 94.1578 109.8296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Shadystake:6P4C_Vert"
+			(at 92.71 121.285 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 121.285 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "560cec71-c6dc-454c-a8ec-c573d9a1f8c8")
+		)
+		(pin "2"
+			(uuid "10a2a6a1-3457-46ff-8256-c1bab03f67dc")
+		)
+		(pin "3"
+			(uuid "4a091a6f-a189-48e4-956e-0fad5fbd6862")
+		)
+		(pin "4"
+			(uuid "5fcfa42f-9c01-4f21-a37f-407129c03fc7")
+		)
+		(pin "5"
+			(uuid "c29160f0-8067-4eec-9d72-a02cf0eb73db")
+		)
+		(pin "6"
+			(uuid "184bb0eb-64af-43b5-8675-81b8d9778722")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "shadystake-rescue:6P6C-Connector")
+		(at 92.71 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7cba2845-987e-4ef7-9f17-6058946e05f1")
+		(property "Reference" "J5"
+			(at 94.1578 55.4482 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6P6C"
+			(at 94.1578 57.7596 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Shadystake:6P4C_Vert"
+			(at 92.71 69.215 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 69.215 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5220e261-2700-4749-932e-ac5ca95ab2f8")
+		)
+		(pin "2"
+			(uuid "5743201b-b7eb-4e64-8bb7-1faa4f643de1")
+		)
+		(pin "3"
+			(uuid "775f01d7-9594-46a8-956e-d2cd2d8cebf3")
+		)
+		(pin "4"
+			(uuid "a24f40bc-9327-4c01-a76e-3547c732ea2a")
+		)
+		(pin "5"
+			(uuid "dc8ea26a-05da-439f-9442-9f6a8b2827b0")
+		)
+		(pin "6"
+			(uuid "2c5be382-a333-4d32-b42e-539d0a14b69b")
+		)
+		(instances
+			(project "shadystake"
+				(path "/3085826e-0b13-4a8b-8c8d-a88fd04c6de4"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
