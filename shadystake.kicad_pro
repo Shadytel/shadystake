@@ -65,7 +65,7 @@
           "min_island_area": 2.0,
           "min_thickness": 0.254,
           "pad_connection": 2,
-          "remove_islands": 0,
+          "remove_islands": 2,
           "thermal_relief_gap": 0.508,
           "thermal_relief_spoke_width": 0.508
         }
@@ -555,7 +555,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "shadystakev03",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
