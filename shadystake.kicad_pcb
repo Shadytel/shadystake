@@ -121,8 +121,8 @@
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
-			(sketchdnponfab yes)
-			(crossoutdnponfab yes)
+			(sketchdnponfab no)
+			(crossoutdnponfab no)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -10711,6 +10711,54 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "33b0dc66-01e8-4969-8656-ae634b060aba")
+	)
+	(gr_text "4"
+		(at 58.928 48.26 0)
+		(layer "F.Mask")
+		(uuid "13b47150-a4e7-4c7d-8937-7cd65c96937f")
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.3)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "1"
+		(at 58.928 63.5 0)
+		(layer "F.Mask")
+		(uuid "8b59bcf3-afaa-46a1-97c5-e6defb03032d")
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.3)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "3"
+		(at 113.792 48.26 0)
+		(layer "F.Mask")
+		(uuid "6e1e6b3c-c90e-4a35-bc5c-db457bab5c6c")
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.3)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "2\n"
+		(at 113.792 63.5 0)
+		(layer "F.Mask")
+		(uuid "a3219221-f263-40b0-b0f5-d537c64c1bcb")
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.3)
+			)
+			(justify bottom)
+		)
 	)
 	(gr_text "SCAN FOR\nSERVICE"
 		(at 49.53 53.34 0)
